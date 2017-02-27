@@ -1,0 +1,12 @@
+<svg width="224" height="256" viewBox="0 0 224 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>icon-sliders</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-750 -590)" figma:type="canvas">
+<g id="icon-sliders" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(750 590)" fill="#FFB448" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 48 0L 48 160L 16 160L 16 0L 48 0ZM 128 0L 128 32L 96 32L 96 0L 128 0ZM 176 0L 208 0L 208 96L 176 96L 176 0ZM 80 80L 80 48L 112 48L 144 48L 144 80L 128 80L 128 256L 96 256L 96 80L 80 80ZM 160 144L 160 112L 192 112L 224 112L 224 144L 208 144L 208 256L 176 256L 176 144L 160 144ZM 0 208L 0 176L 32 176L 64 176L 64 208L 48 208L 48 256L 16 256L 16 208L 0 208Z"/>
+</defs>
+</svg>

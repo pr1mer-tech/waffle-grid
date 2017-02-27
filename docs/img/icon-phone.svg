@@ -1,0 +1,12 @@
+<svg width="164" height="256" viewBox="0 0 164 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>icon-phone</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-1021 -590)" figma:type="canvas">
+<g id="icon-phone" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(1021.5 590)" fill="#FFB448" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 0 0L 11.6364 0L 151.273 0L 162.909 0L 162.909 11.6364L 162.909 197.818L 162.909 244.364L 162.909 256L 151.273 256L 92.2969 256L 69.8182 256L 11.6364 256L 0 256L 0 244.364L 0 197.818L 0 11.6364L 0 0ZM 23.2727 23.2727L 23.2727 186.182L 69.8182 186.182L 92.2969 186.182L 139.636 186.182L 139.636 23.2727L 23.2727 23.2727ZM 139.636 209.455L 103.933 209.455L 103.933 232.727L 139.636 232.727L 139.636 209.455ZM 58.1818 209.455L 23.2727 209.455L 23.2727 232.727L 58.1818 232.727L 58.1818 209.455Z"/>
+</defs>
+</svg>

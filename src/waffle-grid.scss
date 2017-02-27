@@ -1,0 +1,353 @@
+/*!
+ * waffle-grid - 1.0.0 - (https://lucasgruwez.github.io/waffle-grid)
+ * Copyright 2017 Lucas Gruwez.
+ * Licensed under MIT
+ * https://lucasgruwez.github.io/waffle-grid
+ */
+
+// Class names
+// Change them to whatever you're used to
+$grid-classname: "grid" !default;
+$row-classname: "row" !default;
+$column-classname: "col" !default;
+
+// Column amounts, results in:
+// .col-n-of-4, or .col-n-of-8
+$grid-columns: (4, 8, 12);
+
+// Column amounts for medium devices
+$m-columns: (2, 4, 6, 8);
+
+// Column amounts for small devices
+$s-columns: (2, 4, 6);
+
+// Gutter width
+$gutter-width: 20px !default;
+
+// Grid width and max-width.
+// It is automatically centered on the page.
+$grid-width: 960px;
+$grid-max-width: 80%;
+
+// Pushes and Pulls
+$pushes: true !default;
+$pulls: true !default;
+
+// Breakpoints
+$bp-medium: 840px !default;
+$bp-small: 480px !default;
+
+// Actual css, change at your own risk
+
+.#{$grid-classname} {
+	display: flex;
+	flex-direction: column;
+	width: $grid-width;
+	max-width: $grid-max-width;
+	margin: 0 auto;
+}
+
+.#{$row-classname} {
+	display: flex;
+	flex-direction: row;
+	margin-top: $gutter-width;
+	@extend .full-width
+}
+
+.#{$column-classname} {
+  box-sizing: border-box;
+  padding-left: $gutter-width;
+  vertical-align: top;
+}
+
+.full-width     {width: percentage(1/1);}
+.half-width     {width: percentage(1/2);}
+.one-third      {width: percentage(1/3);}
+.two-thirds     {width: percentage(2/3);}
+.one-quarter    {width: percentage(1/4);}
+.two-quarters   {width: percentage(2/4);}
+.three-quarters {width: percentage(3/4);}
+
+.push-full-width     {margin-left: percentage(1/1);}
+.push-one-half       {margin-left: percentage(1/2);}
+.push-one-third      {margin-left: percentage(1/3);}
+.push-two-thirds     {margin-left: percentage(2/3);}
+.push-one-quarter    {margin-left: percentage(1/4);}
+.push-two-quarters   {margin-left: percentage(2/4);}
+.push-three-quarters {margin-left: percentage(3/4);}
+
+.pull-full-width     {margin-right: percentage(1/1);}
+.pull-one-half       {margin-right: percentage(1/2);}
+.pull-one-third      {margin-right: percentage(1/3);}
+.pull-two-thirds     {margin-right: percentage(2/3);}
+.pull-one-quarter    {margin-right: percentage(1/4);}
+.pull-two-quarters   {margin-right: percentage(2/4);}
+.pull-three-quarters {margin-right: percentage(3/4);}
+
+.center              {margin-left: auto; margin-right: auto;}
+
+
+@each $col-am in $grid-columns {
+	@for $i from 1 through $col-am {
+		.#{$column-classname}-#{$i}-of-#{$col-am} {
+			@if percentage($i/$col-am) == percentage(1/1) {
+        @extend .full-width;
+      } @else if percentage($i/$col-am) == percentage(1/2) {
+        @extend .half-width;
+      } @else if percentage($i/$col-am) == percentage(1/3) {
+        @extend .one-third;
+      } @else if percentage($i/$col-am) == percentage(2/3) {
+        @extend .two-thirds;
+      } @else if percentage($i/$col-am) == percentage(1/4) {
+        @extend .one-quarter;
+      } @else if percentage($i/$col-am) == percentage(2/4) {
+        @extend .two-quarters;
+      } @else if percentage($i/$col-am) == percentage(3/4) {
+        @extend .three-quarters;
+			} @else {
+        width: percentage($i/$col-am);
+      }
+		}
+
+		@if ($pushes) {
+      .push-#{$i}-of-#{$col-am} {
+        @if percentage($i/$col-am) == percentage(1/1) {
+          @extend .push-full-width;
+        } @else if percentage($i/$col-am) == percentage(1/2) {
+          @extend .push-one-half;
+        } @else if percentage($i/$col-am) == percentage(1/3) {
+          @extend .push-one-third;
+        } @else if percentage($i/$col-am) == percentage(2/3) {
+          @extend .push-two-thirds;
+        } @else if percentage($i/$col-am) == percentage(1/4) {
+          @extend .push-one-quarter;
+        } @else if percentage($i/$col-am) == percentage(2/4) {
+          @extend .push-two-quarters;
+        } @else if percentage($i/$col-am) == percentage(3/4) {
+          @extend .push-three-quarters;
+        } @else {
+          margin-left: percentage($i/$col-am);
+        }
+      }
+		}
+
+    @if ($pulls) {
+      .pull-#{$i}-of-#{$col-am} {
+
+        @if percentage($i/$col-am) == percentage(1/1) {
+          @extend .pull-full-width;
+        } @else if percentage($i/$col-am) == percentage(1/2) {
+          @extend .pull-one-half;
+        } @else if percentage($i/$col-am) == percentage(1/3) {
+          @extend .pull-one-third;
+        } @else if percentage($i/$col-am) == percentage(2/3) {
+          @extend .pull-two-thirds;
+        } @else if percentage($i/$col-am) == percentage(1/4) {
+          @extend .pull-one-quarter;
+        } @else if percentage($i/$col-am) == percentage(2/4) {
+          @extend .pull-two-quarters;
+        } @else if percentage($i/$col-am) == percentage(3/4) {
+          @extend .pull-three-quarters;
+        } @else {
+          margin-left: -(percentage($i/$col-am));
+        }
+      }
+    }
+	}
+}
+
+@media (max-width: $bp-medium) {
+	.m-vertical       {flex-direction: column;}
+	.m-hide           {display: none;}
+
+	.m-full-width     {width: percentage(1/1);}
+	.m-half-width     {width: percentage(1/2);}
+	.m-one-third      {width: percentage(1/3);}
+	.m-two-thirds     {width: percentage(2/3);}
+	.m-one-quarter    {width: percentage(1/4);}
+	.m-two-quarters   {width: percentage(2/4);}
+	.m-three-quarters {width: percentage(3/4);}
+
+	.push-m-full-width     {margin-left: percentage(1/1);}
+	.push-m-one-half       {margin-left: percentage(1/2);}
+	.push-m-one-third      {margin-left: percentage(1/3);}
+	.push-m-two-thirds     {margin-left: percentage(2/3);}
+	.push-m-one-quarter    {margin-left: percentage(1/4);}
+	.push-m-two-quarters   {margin-left: percentage(2/4);}
+	.push-m-three-quarters {margin-left: percentage(3/4);}
+
+	.pull-m-full-width     {margin-right: percentage(1/1);}
+	.pull-m-one-half       {margin-right: percentage(1/2);}
+	.pull-m-one-third      {margin-right: percentage(1/3);}
+	.pull-m-two-thirds     {margin-right: percentage(2/3);}
+	.pull-m-one-quarter    {margin-right: percentage(1/4);}
+	.pull-m-two-quarters   {margin-right: percentage(2/4);}
+	.pull-m-three-quarters {margin-right: percentage(3/4);}
+	@each $col-am in $m-columns {
+		@for $i from 1 through $col-am {
+			.#{$column-classname}-m-#{$i}-of-#{$col-am} {
+				@if percentage($i/$col-am) == percentage(1/1) {
+	        @extend .m-full-width;
+	      } @else if percentage($i/$col-am) == percentage(1/2) {
+	        @extend .m-half-width;
+	      } @else if percentage($i/$col-am) == percentage(1/3) {
+	        @extend .m-one-third;
+	      } @else if percentage($i/$col-am) == percentage(2/3) {
+	        @extend .m-two-thirds;
+	      } @else if percentage($i/$col-am) == percentage(1/4) {
+	        @extend .m-one-quarter;
+	      } @else if percentage($i/$col-am) == percentage(2/4) {
+	        @extend .m-two-quarters;
+	      } @else if percentage($i/$col-am) == percentage(3/4) {
+	        @extend .m-three-quarters;
+				} @else {
+	        width: percentage($i/$col-am);
+	      }
+			}
+			@if ($pushes) {
+				.push-m-#{$i}-of-#{$col-am} {
+					@if percentage($i/$col-am) == percentage(1/1) {
+		        @extend .push-m-full-width;
+		      } @else if percentage($i/$col-am) == percentage(1/2) {
+		        @extend .push-m-one-half;
+		      } @else if percentage($i/$col-am) == percentage(1/3) {
+		        @extend .push-m-one-third;
+		      } @else if percentage($i/$col-am) == percentage(2/3) {
+		        @extend .push-m-two-thirds;
+		      } @else if percentage($i/$col-am) == percentage(1/4) {
+		        @extend .push-m-one-quarter;
+		      } @else if percentage($i/$col-am) == percentage(2/4) {
+		        @extend .push-m-two-quarters;
+		      } @else if percentage($i/$col-am) == percentage(3/4) {
+		        @extend .push-m-three-quarters;
+					} @else {
+		        margin-left: percentage($i/$col-am);
+		      }
+				}
+			}
+			@if ($pulls) {
+				.pull-m-#{$i}-of-#{$col-am} {
+					@if percentage($i/$col-am) == percentage(1/1) {
+						@extend .pull-m-full-width;
+					} @else if percentage($i/$col-am) == percentage(1/2) {
+						@extend .pull-m-one-half;
+					} @else if percentage($i/$col-am) == percentage(1/3) {
+						@extend .pull-m-one-third;
+					} @else if percentage($i/$col-am) == percentage(2/3) {
+						@extend .pull-m-two-thirds;
+					} @else if percentage($i/$col-am) == percentage(1/4) {
+						@extend .pull-m-one-quarter;
+					} @else if percentage($i/$col-am) == percentage(2/4) {
+						@extend .pull-m-two-quarters;
+					} @else if percentage($i/$col-am) == percentage(3/4) {
+						@extend .pull-m-three-quarters;
+					} @else {
+						margin-left: percentage($i/$col-am);
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: $bp-small) {
+	.s-vertical       {flex-direction: column;}
+	.s-hide           {display: none;}
+
+	.s-full-width     {width: percentage(1/1);}
+	.s-half-width     {width: percentage(1/2);}
+	.s-one-third      {width: percentage(1/3);}
+	.s-two-thirds     {width: percentage(2/3);}
+	.s-one-quarter    {width: percentage(1/4);}
+	.s-two-quarters   {width: percentage(2/4);}
+	.s-three-quarters {width: percentage(3/4);}
+
+	.push-s-full-width     {margin-left: percentage(1/1);}
+	.push-s-one-half       {margin-left: percentage(1/2);}
+	.push-s-one-third      {margin-left: percentage(1/3);}
+	.push-s-two-thirds     {margin-left: percentage(2/3);}
+	.push-s-one-quarter    {margin-left: percentage(1/4);}
+	.push-s-two-quarters   {margin-left: percentage(2/4);}
+	.push-s-three-quarters {margin-left: percentage(3/4);}
+
+	.pull-s-full-width     {margin-right: percentage(1/1);}
+	.pull-s-one-half       {margin-right: percentage(1/2);}
+	.pull-s-one-third      {margin-right: percentage(1/3);}
+	.pull-s-two-thirds     {margin-right: percentage(2/3);}
+	.pull-s-one-quarter    {margin-right: percentage(1/4);}
+	.pull-s-two-quarters   {margin-right: percentage(2/4);}
+	.pull-s-three-quarters {margin-right: percentage(3/4);}
+	@each $col-am in $s-columns {
+		@for $i from 1 through $col-am {
+			.#{$column-classname}-s-#{$i}-of-#{$col-am} {
+				@if percentage($i/$col-am) == percentage(1/1) {
+	        @extend .s-full-width;
+	      } @else if percentage($i/$col-am) == percentage(1/2) {
+	        @extend .s-half-width;
+	      } @else if percentage($i/$col-am) == percentage(1/3) {
+	        @extend .s-one-third;
+	      } @else if percentage($i/$col-am) == percentage(2/3) {
+	        @extend .s-two-thirds;
+	      } @else if percentage($i/$col-am) == percentage(1/4) {
+	        @extend .s-one-quarter;
+	      } @else if percentage($i/$col-am) == percentage(2/4) {
+	        @extend .s-two-quarters;
+	      } @else if percentage($i/$col-am) == percentage(3/4) {
+	        @extend .s-three-quarters;
+				} @else {
+	        width: percentage($i/$col-am);
+	      }
+			}
+			@if ($pushes) {
+				.push-s-#{$i}-of-#{$col-am} {
+					@if percentage($i/$col-am) == percentage(1/1) {
+		        @extend .push-s-full-width;
+		      } @else if percentage($i/$col-am) == percentage(1/2) {
+		        @extend .push-s-one-half;
+		      } @else if percentage($i/$col-am) == percentage(1/3) {
+		        @extend .push-s-one-third;
+		      } @else if percentage($i/$col-am) == percentage(2/3) {
+		        @extend .push-s-two-thirds;
+		      } @else if percentage($i/$col-am) == percentage(1/4) {
+		        @extend .push-s-one-quarter;
+		      } @else if percentage($i/$col-am) == percentage(2/4) {
+		        @extend .push-s-two-quarters;
+		      } @else if percentage($i/$col-am) == percentage(3/4) {
+		        @extend .push-s-three-quarters;
+					} @else {
+		        margin-left: percentage($i/$col-am);
+		      }
+				}
+			}
+			@if ($pulls) {
+				.pull-s-#{$i}-of-#{$col-am} {
+					@if percentage($i/$col-am) == percentage(1/1) {
+						@extend .pull-s-full-width;
+					} @else if percentage($i/$col-am) == percentage(1/2) {
+						@extend .pull-s-one-half;
+					} @else if percentage($i/$col-am) == percentage(1/3) {
+						@extend .pull-s-one-third;
+					} @else if percentage($i/$col-am) == percentage(2/3) {
+						@extend .pull-s-two-thirds;
+					} @else if percentage($i/$col-am) == percentage(1/4) {
+						@extend .pull-s-one-quarter;
+					} @else if percentage($i/$col-am) == percentage(2/4) {
+						@extend .pull-s-two-quarters;
+					} @else if percentage($i/$col-am) == percentage(3/4) {
+						@extend .pull-s-three-quarters;
+					} @else {
+						margin-left: percentage($i/$col-am);
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: $bp-small) {
+	.s-only {display: none;}
+}
+
+@media (min-width: $bp-medium) {
+	.m-only {display: none;}
+}

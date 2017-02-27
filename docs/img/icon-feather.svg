@@ -1,0 +1,12 @@
+<svg width="102" height="256" viewBox="0 0 102 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>icon-feather</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-628 -590)" figma:type="canvas">
+<g id="icon-feather" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(628.081 590)" fill="#FFB448" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 50.9594 0L 55.5173 2.27897L 96.2849 22.6627L 101.919 25.4797L 101.919 31.7786L 101.919 92.9299L 101.919 174.465L 101.919 180.764L 96.2849 183.581L 61.1513 201.148L 61.1513 256L 40.7675 256L 40.7675 201.148L 5.63393 183.581L 0 180.764L 0 174.465L 0 133.697L 0 31.7786L 0 25.4797L 5.63393 22.6627L 46.4015 2.27897L 50.9594 0ZM 61.1513 178.358L 81.535 168.166L 81.535 99.2288L 61.1513 89.037L 61.1513 154.081L 61.1513 178.358ZM 61.1513 66.2472L 81.535 76.4391L 81.535 38.0776L 61.1513 27.8857L 61.1513 66.2472ZM 40.7675 27.8857L 40.7675 72.5461L 40.7675 137.59L 20.3838 127.399L 20.3838 38.0776L 40.7675 27.8857ZM 20.3838 150.188L 20.3838 168.166L 40.7675 178.358L 40.7675 160.38L 20.3838 150.188Z"/>
+</defs>
+</svg>

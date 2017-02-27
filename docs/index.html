@@ -1,0 +1,99 @@
+---
+---
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Waffle grid</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/favico.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="/css/waffle-grid.min.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+  </head>
+  <body>
+    <!--[if lte IE 9]
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/?locale=en">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <header>
+      <nav>
+        <img src="/img/waffle-logo.svg" alt="Waffle logo">
+        <span class="logo-text">Waffle</span>
+        <ul class="m-hide">
+          <li><a href="#getting-started">Getting started</a></li>
+          <li><a href="#docs">Docs</a></li>
+          <li><a href="#download">Download</a></li>
+          <li><a href="">Github</a></li>
+        </ul>
+      </nav>
+      <div class="main-content">
+        <img src="/img/waffle-logo-white.svg" alt="Waffle logo">
+        <h1 class="title">Waffle grid</h1>
+        <p>An easy to use flexbox grid system.</p>
+        <p class="small">Made by <a href="//github.com/lucasgruwez">@lucasgruwez</a></p>
+      </div>
+    </header>
+    <main>
+      <section id="features">
+        <div class="grid">
+          <div class="row m-vertical">
+            <div class="col col-4-of-12 m-full-width">
+              <img src="/img/icon-feather.svg" alt="Feather icon">
+              <h2>Light weight</h2>
+              <p>The waffle grid system is super lightweight, weighing in at only 6kb minified using the default settings.</p>
+            </div>
+            <div class="col col-4-of-12 m-full-width">
+              <img src="/img/icon-phone.svg" alt="Phone icon">
+              <h2>Responsive</h2>
+              <p>With classes for medium and small devices, the waffle grid can make your layouts fully responsive.</p>
+            </div>
+            <div class="col col-4-of-12 m-full-width">
+              <img src="/img/icon-sliders.svg" alt="Sliders icon">
+              <h2>Customisable</h2>
+              <p>The waffle grid system was written entyerly in sass, so that you can easily change customize the grid to suit your needs.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="download-cta-1">
+        <a class="btn" href="{{site.download}}">Download v1.0.0</a>
+      </section>
+      <section id="grid-example">
+        {% include example.html %}
+      </section>
+      <section id="docs-preview">
+        <div class="wrapper">
+          <script src="https://gist.github.com/lucasgruwez/c3c6ed03fb422fb74e8fec550d7c3978.js"></script>
+        </div>
+      </section>
+      <section id="docs-cta">
+        <a href="/docs" class="btn">Read the docs</a>
+      </section
+    </main>
+
+    <div class="gist js-activated">
+      <div class="gist-meta">
+        <a>All code</a> hosted with ❤ by <a href="//github.com">GitHub</a>
+      </div>
+    </div>
+
+    {% include footer.html %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.slim.min.js"></script>
+    <script src="/js/functions.js"></script>
+    <script>
+        // window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+        // ga('create','UA-92684751-1','auto');ga('send','pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  </body>
+</html>

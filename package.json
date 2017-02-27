@@ -1,0 +1,22 @@
+{
+  "name": "waffle-grid",
+  "version": "1.0.0",
+  "description": "An easy to use flexbox grid system",
+  "main": "dist/squid.min.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "flexbox",
+    "grid",
+    "css"
+  ],
+  "author": "Lucas Gruwez",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^3.0.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0"
+  }
+}
