@@ -8,11 +8,22 @@
     <title>Waffle grid</title>
     <meta name="description" content="An easy to use flexbox grid system">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <!-- Twitter card meta -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@lucasgruwez">
+    <meta name="twitter:creator" content="@lucasgruwez">
+    <meta name="twitter:title" content="Waffle Grid system">
+    <meta name="twitter:description" content="An easy to use flexbox grid system.">
+    <meta name="twitter:image" content="/waffle-grid/img/waffle-grid-marketing@2x.jpg">
+    <!-- Open graph met atags -->
+    <meta property="og:title" content="Waffle Grid system" />
+    <meta property="og:description" content="An easy to use flexbox grid system"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lucasgruwez.github.io/waffle-grid" />
+    <meta property="og:image" content="https://lucasgruwez.github.io/waffle-grid/img/waffle-grid-marketing@2x.jpg" />
+    <!-- Link tags -->
     <link rel="apple-touch-icon" href="/waffle-grid/apple-touch-icon.png">
     <link rel="shortcut icon" href="/waffle-grid/favico.png">
-    <!-- Place favicon.ico in the root directory -->
-
     <link rel="stylesheet" href="/waffle-grid/css/waffle-grid.min.css">
     <link rel="stylesheet" href="/waffle-grid/css/normalize.css">
     <link rel="stylesheet" href="/waffle-grid/css/reset.css">
@@ -23,8 +34,8 @@
     <!--[if lte IE 9]
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/?locale=en">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
-
-    <!-- Add your site or application content here -->
+    
+    <!-- Header and nav -->
     <header>
       <nav>
         <img src="/waffle-grid/img/waffle-logo.svg" alt="Waffle logo">
@@ -42,7 +53,10 @@
         <p class="small">Made by <a href="//github.com/lucasgruwez">@lucasgruwez</a></p>
       </div>
     </header>
+    
+    
     <main>
+      <!-- features section, the one with the three icons -->
       <section id="features">
         <div class="grid">
           <div class="row m-vertical">
@@ -64,17 +78,21 @@
           </div>
         </div>
       </section>
+      <!-- Download call to action -->
       <section id="download-cta-1">
         <a class="btn" href="{{site.download}}">Download v1.0.0</a>
       </section>
+      <!-- Grid example -->
       <section id="grid-example">
         {% include example.html %}
       </section>
+      <!-- Code for the grid Example -->
       <section id="docs-preview">
         <div class="wrapper">
           <script src="https://gist.github.com/lucasgruwez/c3c6ed03fb422fb74e8fec550d7c3978.js"></script>
         </div>
       </section>
+      <!-- Docs call to action -->
       <section id="docs-cta">
         <a href="/waffle-grid/docs" class="btn">Read the docs</a>
       </section>
