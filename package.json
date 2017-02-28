@@ -11,7 +11,7 @@
     "grid",
     "css"
   ],
-  "author": "Lucas Gruwez",
+  "author": "Lucas Gruwez <gruwez.lucas@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "gulp-autoprefixer": "^3.1.1",
