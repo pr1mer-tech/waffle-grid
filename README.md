@@ -6,6 +6,25 @@
 An easy to use flexbox grid system.
 </p>
 
+<p align="center">
+  <a href="https://github.com/lucasgruwez/waffle-grid/releases">
+    <img src="https://img.shields.io/github/release/lucasgruwez/waffle-grid.svg" alt="GitHub release" data-pin-nopin="true">
+  </a>
+  <a href="">
+    <img src="https://img.shields.io/github/downloads/lucasgruwez/waffle-grid/total.svg" alt="Github All Releases" data-pin-nopin="true">
+  </a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/github/license/lucasgruwez/waffle-grid.svg" alt="License" data-pin-nopin="true">
+  </a>
+  <a href="">
+    <img src="https://img.shields.io/david/dev/lucasgruwez/waffle-grid.svg" alt="David" data-pin-nopin="true">
+  </a>
+  <a href="http://gulpjs.com/">
+    <img src="https://img.shields.io/badge/Built%20with-Gulp-%23CF4646.svg" alt="Built with Gulp" data-pin-nopin="true">
+  </a>
+</p>
+
+
 ## Getting Started
 
 To get the waffle grid system in your web page, simply pste this code into the `head` of your document,
