@@ -78,8 +78,7 @@ If you want you can still download the waffle grid [here](https://github.com/luc
 </div>
 ```
 
-*Docs still being written*
-The full docs can be found [here](lucasgurwez.github.io/waffle-grid/docs)
+The full docs can be found [here](https://github.com/lucasgruwez/waffle-grid/wiki)
 
 ## Built With
 
