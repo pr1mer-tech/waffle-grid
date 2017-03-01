@@ -7,11 +7,13 @@ permalink:        pretty
 
 # Server
 source:           docs
-url:              http://lucasgruwez.github.io/waffle-grid
+url:              http://lucasgruwez.github.io
+baseurl:          /waffle-grid
 encoding:         UTF-8
 
 # Custom vars
-current_version:  1.0.0
+version:          v1.2.0
 repo:             https://github.com/lucasgruwez/waffle-grid
-
-download:         https://github.com/lucasgruwez/waffle-grid/releases/download/v1.0.0/waffle-grid.min.css
+download:         https://github.com/lucasgruwez/waffle-grid/releases/download/v1.2.0/waffle-grid.min.css
+cdn:              https://unpkg.com/waffle-grid@1.2.0
+docs:             https://github.com/lucasgruwez/waffle-grid/wiki

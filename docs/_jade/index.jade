@@ -1,0 +1,55 @@
+// output: ../index.html
+//-
+// Header
+header
+  .header-content
+    // This div is needed to ensure that the content is centered
+    img(src="{{site.baseurl}}/img/waffle-logo-white.svg", alt="Waffle logo")
+    h1.title Waffle grid
+    p An easy to use flexbox grid system.
+    p.small Made by 
+      a(href="https://github.com/lucasgruwez") @lucasgruwez
+
+// Main content
+main
+
+  // Grid features
+  section#features
+    .grid
+      .row
+        .col.col-4-of-12.col-m-4-of-4
+          img(src="{{site.baseurl}}/img/icon-feather.svg", alt="Feather icon")
+          h2 Light weight
+          p The waffle grid system is super lightweight, weighing in at only 8kb minified using the default settings.
+        .col.col-4-of-12.col-m-4-of-4
+          img(src="{{site.baseurl}}/img/icon-phone.svg", alt="Phone icon")
+          h2 Responsive
+          p With classes for medium and small devices, the waffle grid can make your layouts fully responsive.
+        .col.col-4-of-12.col-m-4-of-4
+          img(src="{{site.baseurl}}/img/icon-sliders.svg", alt="Sliders icon")
+          h2 Customisable
+          p The waffle grid system was written entyerly in sass, so that you can easily change customize the grid to suit your needs.
+          
+  // Download call to action
+  section#download-cta
+    a.btn(href="{{site.download}}") Download {{site.version}}
+    
+  // Grid example
+  section#grid-example
+    | {% include example.html %}
+    
+  // Docs preview
+  section#docs-preview
+    .wrapper
+      <script src="https://gist.github.com/lucasgruwez/c3c6ed03fb422fb74e8fec550d7c3978.js")></script>
+      
+  // Docs call to actio
+  section#docs-cta
+    a.btn(href="{{site.docs}}") Read the docs
+
+// Bottom "All code hosted with ❤ by GitHub section that pops up
+.gist.js-activated
+  .gist-meta
+    a All code
+    |  hosted with ❤ by 
+    a(href="https://github.com") GitHub

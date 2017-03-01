@@ -10,3 +10,7 @@ $(window).scroll(function() {
     // console.log('invisible2')
   }
 })
+
+$('nav .hamburger').click(function () {
+  $('.js-toggled').toggleClass('visible')
+})
