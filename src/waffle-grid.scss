@@ -13,21 +13,21 @@ $column-classname: "col" !default;
 
 // Column amounts, results in:
 // .col-n-of-4, or .col-n-of-8
-$grid-columns: (4, 8, 12);
+$grid-columns: (4, 8, 12) !default;
 
 // Column amounts for medium devices
-$m-columns: (2, 4, 6, 8);
+$m-columns: (2, 4, 6, 8) !default;
 
 // Column amounts for small devices
-$s-columns: (2, 4, 6);
+$s-columns: (2, 4, 6) !default;
 
 // Gutter width
 $gutter-width: 20px !default;
 
 // Grid width and max-width.
 // It is automatically centered on the page.
-$grid-width: 960px;
-$grid-max-width: 80%;
+$grid-width: 960px !default;
+$grid-max-width: 80% !default;
 
 // Pushes and Pulls
 $pushes: true !default;
