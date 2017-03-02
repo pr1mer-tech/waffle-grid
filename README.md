@@ -37,7 +37,7 @@ or you can install the waffle grid system using a package manager like npm
 ```
 $ npm install waffel-grid
 ```
-If you want you can still download the waffle grid [here](https://github.com/lucasgruwez/waffle-grid/releases/download/v1.0.0/waffle-grid.min.css).
+If you want you can still download the waffle grid [here](https://github.com/lucasgruwez/waffle-grid/releases/download/1.2.0/waffle-grid.min.css).
 
 ## Docs
 
@@ -57,21 +57,20 @@ If you want you can still download the waffle grid [here](https://github.com/luc
   <div class="row">
     <!-- use col-m- and col-s- as well as m-hide, s-hide, m-only and s-only to make your grid responsive -->
     <div class="col col-2-of-8 col-m-1-of-4 col-s-1-of-2"></div>
-    <div class="col col-3-of-8 col-m-2-of-4 s-half-width"></div>
+    <div class="col col-3-of-8 col-m-2-of-4 col-s-1-of-2"></div>
     <div class="col col-1-of-8 m-hide"></div>
     <div class="col col-2-of-8 col-m-1-of-4 s-hide"></div>
   </div>
   <div class="row">
-    <!-- Some special widths have their own name, like full-width, half-width, one-third, three-quarters... -->
     <div class="col col-1-of-4"></div>
-    <div class="col half-width"></div>
+    <div class="col col-1-of-2"></div>
     <div class="col col-1-of-4"></div>
   </div>
   <div class="row">
     <!-- Pushes and pulls are used in the same way as col-n-of-p. They can also be responsive, like pull-m-1-of-4 -->
     <div class="col col-1-of-8"></div>
     <div class="col col-2-of-8 push-2-of-12"></div>
-    <div class="col col-3-of-8 push-1-of-12"></div>
+    <div class="col col-3-of-8 pull-1-of-12"></div>
   </div>
 </div>
 ```
