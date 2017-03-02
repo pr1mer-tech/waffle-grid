@@ -19,6 +19,9 @@ An easy to use flexbox grid system.
   <a href="">
     <img src="https://img.shields.io/david/dev/lucasgruwez/waffle-grid.svg" alt="David" data-pin-nopin="true">
   </a>
+  <a href="https://travis-ci.org/lucasgruwez/waffle-grid">
+    <img src="https://img.shields.io/travis/lucasgruwez/waffle-grid.svg" alt="Travis" data-pin-nopin="true">
+    </a>
   <a href="http://gulpjs.com/">
     <img src="https://img.shields.io/badge/Built%20with-Gulp-%23CF4646.svg" alt="Built with Gulp" data-pin-nopin="true">
   </a>
