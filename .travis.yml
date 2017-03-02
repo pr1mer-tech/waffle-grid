@@ -2,9 +2,8 @@ language: node_js
 node_js:
   - "node"
 
-install: 
+before-script: 
   - npm install -g gulp
-  - npm install
 script:
   - gulp sass:compile
   - gulp css:minify
