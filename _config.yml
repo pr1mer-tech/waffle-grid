@@ -5,9 +5,10 @@ highlighter: rouge
 permalink: pretty
 
 # Server
-source:  docs
-url:     lucasgruwez.github.io
-baseurl: /waffle-grid
+source:       docs
+includes_dir: docs/_includes
+url:          lucasgruwez.github.io
+baseurl:      /waffle-grid
 
 # Custom variables
 version:  v1.2.1
