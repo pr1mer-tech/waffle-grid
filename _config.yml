@@ -1,0 +1,17 @@
+markdown: kramdown
+highlighter: rouge
+
+# permalinks
+permalink: pretty
+
+# Server
+source:  docs
+url:     lucasgruwez.github.io
+baseurl: /waffle-grid
+
+# Custom variables
+version:  v1.2.1
+cdn:      https://unpkg.com/waffle-grid
+repo:     https://github.com/lucasgruwez/waffle-grid
+download: https://github.com/lucasgruwez/waffle-grid/releases/download/v1.2.1/waffle-grid.min.css
+docs:     https://github.com/lucasgruwez/waffle-grid/wiki
