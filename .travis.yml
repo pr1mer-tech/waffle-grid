@@ -6,7 +6,7 @@ before_install:
   - npm install -g npm@4.3.0
 
 install:
-  - npm install --dev
+  - npm install
 
 before_script:
   - npm install -g gulp
