@@ -32,15 +32,15 @@ An easy to use flexbox grid system.
 
 To get the waffle grid system in your web page, simply pste this code into the `head` of your document,
 ```html
-<link rel="stylesheet" href="https://cdn.rawgit.com/lucasgruwez/waffle-grid/31785e54/dist/waffle-grid.min.css">
+<link rel="stylesheet" href="https://unpkg.com/waffle-grid/dist/waffle-grid.min.css">
 <!-- or -->
-<link rel="stylesheet" href="https://cdn.rawgit.com/lucasgruwez/waffle-grid/31785e54/dist/waffle-grid.css">
+<link rel="stylesheet" href="https://unpkg.com/waffle-grid/dist/waffle-grid.css">
 ```
 or you can install the waffle grid system using a package manager like npm
 ```
 $ npm install waffel-grid
 ```
-If you want you can still download the waffle grid [here](https://github.com/lucasgruwez/waffle-grid/releases/download/1.2.0/waffle-grid.min.css).
+If you want you can still download the waffle grid [here](https://github.com/lucasgruwez/waffle-grid/releases/download/1.2.1/waffle-grid.min.css).
 
 ## Docs
 
