@@ -2,8 +2,19 @@ language: node_js
 node_js:
   - "node"
 
-before-script: 
+before_install:
+  - npm install -g npm@4.3.0
+
+install:
+  - npm install
+
+before_script:
   - npm install -g gulp
-script:
+  
+script: 
   - gulp sass:compile
   - gulp css:minify
+  
+notifications:
+  email: false
+
