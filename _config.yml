@@ -12,8 +12,8 @@ baseurl:          /waffle-grid
 encoding:         UTF-8
 
 # Custom vars
-version:          v1.2.0
+version:          v1.2.1
 repo:             https://github.com/lucasgruwez/waffle-grid
-download:         https://github.com/lucasgruwez/waffle-grid/releases/download/v1.2.0/waffle-grid.min.css
-cdn:              https://unpkg.com/waffle-grid@1.2.0
+download:         https://github.com/lucasgruwez/waffle-grid/releases/download/v1.2.1/waffle-grid.min.css
+cdn:              https://unpkg.com/waffle-grid@1.2.1
 docs:             https://github.com/lucasgruwez/waffle-grid/wiki

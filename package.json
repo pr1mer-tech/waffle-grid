@@ -1,6 +1,6 @@
 {
   "name": "waffle-grid",
-  "version": "v1.2.0",
+  "version": "1.2.1",
   "description": "An easy to use flexbox grid system",
   "main": "dist/waffle-grid.min.css",
   "scripts": {
