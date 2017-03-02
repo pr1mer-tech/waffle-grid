@@ -1,12 +1,28 @@
 const gulp = require('gulp');
-const rename = require('gulp-rename');
 const sass = require('gulp-sass');
-const autoprefixer = require('gulp-autoprefixer');
+const rename = require('gulp-rename');
 const cleanCSS = require('gulp-clean-css');
+const cssbeautify = require('gulp-cssbeautify');
+const autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass:compile', function () {
   return gulp.src('./src/**/*.scss')
     .pipe(sass().on('error', sass.logError))
+    .pipe(cleanCSS({
+      level: {
+        1: {
+          all: true // controls all properties
+        },
+        2: {
+          all: true,
+          mergeNonAdjacentByBody: true
+        }
+      }
+    })) // This moight seem counter intuitive at first, that we first uglify then beautify, but the uglification drastically reduces file size by merging col-1-of-4, col-2-of-8 and col-3-of-12 ito one same rule. The beautyfication makes the code readable. This reduces the non-minified file size by ~200 lines.
+    .pipe(cssbeautify({
+      indent: '  ',
+      autosemicolon: true
+    }))
     .pipe(autoprefixer({
       browsers: ['last 2 versions'],
     }))
