@@ -5,6 +5,7 @@ highlighter: rouge
 permalink: pretty
 
 # Server
+includes_dir: docs/_includes
 url:          lucasgruwez.github.io
 baseurl:      /waffle-grid
 
