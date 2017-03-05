@@ -10,11 +10,9 @@ install:
 
 before_script:
   - npm install -g gulp
-  
-script: 
-  - gulp sass:compile
-  - gulp css:minify
-  
+
+script:
+  - gulp
+
 notifications:
   email: false
-

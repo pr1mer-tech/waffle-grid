@@ -40,7 +40,7 @@ or you can install the waffle grid system using a package manager like npm
 ```
 $ npm install waffel-grid
 ```
-If you want you can still download the waffle grid [here](https://github.com/lucasgruwez/waffle-grid/releases/download/v1.2.1/waffle-grid.min.css).
+If you want you can still download the waffle grid [here](https://github.com/lucasgruwez/waffle-grid/releases/download/v1.2.2/waffle-grid.min.css).
 
 ## Docs
 
@@ -92,7 +92,7 @@ Please read [CONTRIBUTING.md](./.github/CONTRIBUTING.md) for details on our code
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/lucasgruwez/waffle-grid/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/lucasgruwez/waffle-grid/tags).
 
 ## Authors
 
