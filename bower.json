@@ -1,0 +1,22 @@
+{
+  "name": "waffle-grid",
+  "description": "An easy to use flexbox grid system",
+  "main": "dist/waffle-grid.min.css",
+  "authors": [
+    "Lucas Gruwez <gruwez.lucas@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "flexbox",
+    "grid",
+    "css"
+  ],
+  "homepage": "https://github.com/lucasgruwez/waffle-grid",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
