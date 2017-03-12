@@ -1,6 +1,6 @@
 <h1 align="center">Waffle grid</h1>
 <p align="center">
-  <img src="./docs/img/waffle-logo.png"/>
+  <img height="256" src="https://rawgit.com/lucasgruwez/waffle-grid/master/docs/img/waffle-logo@2x.png"/>
 </p>
 <p align="center">
 An easy to use flexbox grid system.
