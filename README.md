@@ -37,8 +37,10 @@ To get the waffle grid system in your web page, simply pste this code into the `
 <link rel="stylesheet" href="https://unpkg.com/waffle-grid/dist/waffle-grid.css">
 ```
 or you can install the waffle grid system using a package manager like npm
-```
+```bash
 $ npm install waffle-grid
+# or
+$ bower install waffle-grid
 ```
 If you want you can still download the waffle grid [here](https://github.com/lucasgruwez/waffle-grid/releases/download/v1.2.2/waffle-grid.min.css).
 
