@@ -38,7 +38,7 @@ To get the waffle grid system in your web page, simply pste this code into the `
 ```
 or you can install the waffle grid system using a package manager like npm
 ```
-$ npm install waffel-grid
+$ npm install waffle-grid
 ```
 If you want you can still download the waffle grid [here](https://github.com/lucasgruwez/waffle-grid/releases/download/v1.2.2/waffle-grid.min.css).
 
