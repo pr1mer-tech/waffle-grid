@@ -1,5 +1,5 @@
 /*!
- * waffle-grid - v1.2.2 - (https://lucasgruwez.github.io/waffle-grid)
+ * waffle-grid - v1.3.0 - (https://lucasgruwez.github.io/waffle-grid)
  * Copyright 2017 Lucas Gruwez.
  * Licensed under MIT
  * https://lucasgruwez.github.io/waffle-grid
@@ -231,7 +231,7 @@
 }
 
 @media (max-width:840px) {
-  .l-only,.m-hide {
+  .m-hide {
     display: none;
   }
 

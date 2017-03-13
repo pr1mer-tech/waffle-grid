@@ -1,5 +1,5 @@
 /*!
- * waffle-grid - v1.2.2 - (https://lucasgruwez.github.io/waffle-grid)
+ * waffle-grid - v1.3.0 - (https://lucasgruwez.github.io/waffle-grid)
  * Copyright 2017 Lucas Gruwez.
  * Licensed under MIT
  * https://lucasgruwez.github.io/waffle-grid
@@ -15,12 +15,6 @@ $column-classname: "col" !default;
 // .col-n-of-4, or .col-n-of-8
 $grid-columns: (4, 8, 12) !default;
 
-// Column amounts for medium devices
-$m-columns: (4, 6, 8) !default;
-
-// Column amounts for small devices
-$s-columns: (4, 6) !default;
-
 // Gutter width
 $gutter-width: 20px !default;
 
@@ -33,9 +27,12 @@ $grid-max-width: 80% !default;
 $pushes: true !default;
 $pulls: true !default;
 
-// Breakpoints
-$bp-medium: 840px !default;
-$bp-small: 480px !default;
+// Breakpoints. Structure:
+// name: (screen-width, column-amounts)
+$breakpoints: (
+	m: (840px, (4, 6, 8)),
+	s: (480px, (4, 6)),
+);
 
 // Actual css, change at your own risk
 
@@ -85,65 +82,68 @@ $bp-small: 480px !default;
 	} // end for
 } // end each
 
-@media (max-width: $bp-medium) {
-	.l-only {display: none;}
-	.m-hide {display: none;}
+@each $bp in $breakpoints {
+	$bp-name: nth($bp, 1);
+	$bp-width: nth(nth($bp, 2), 1);
+	$bp-col-ams: nth(nth($bp, 2), 2);
 
-	@each $col-am in $m-columns {
-		@for $i from 1 through $col-am {
+	@media (max-width: $bp-width) {
+		.#{$bp-name}-hide {display: none;}
 
-			.#{$column-classname}-m-#{$i}-of-#{$col-am} {
-	      width: calc(#{percentage($i/$col-am)} - #{$gutter-width});
-			} // end width
+		@each $col-am in $bp-col-ams {
+			@for $i from 1 through $col-am {
 
-			@if ($pushes) {
-	      .push-m-#{$i}-of-#{$col-am} {
-	        margin-left: calc(#{percentage($i/$col-am)} + #{$gutter-width} / 2);
-	      }
-			} // end pushes
+				.#{$column-classname}-#{$bp-name}-#{$i}-of-#{$col-am} {
+					width: calc(#{percentage($i/$col-am)} - #{$gutter-width});
+				} // end width
 
-			@if ($pulls) {
-	      .pull-m-#{$i}-of-#{$col-am} {
-	        margin-right: calc(#{percentage($i/$col-am)} + #{$gutter-width} / 2);
-	      }
-			} // end pulls
-		} // end for
-	} // end each
+				@if ($pushes) {
+					.push-#{$bp-name}-#{$i}-of-#{$col-am} {
+						margin-left: calc(#{percentage($i/$col-am)} + #{$gutter-width} / 2);
+					}
+				} // end pushes
+
+				@if ($pulls) {
+					.pull-#{$bp-name}-#{$i}-of-#{$col-am} {
+						margin-right: calc(#{percentage($i/$col-am)} + #{$gutter-width} / 2);
+					}
+				} // end pulls
+			} // end for
+		} // end each
+	}
 }
 
-@media (max-width: $bp-small) {
-	.s-hide {display: none;}
+@function reverse($list, $recursive: false) {
+   $result: ();
 
-	@each $col-am in $s-columns {
-		@for $i from 1 through $col-am {
+   @for $i from length($list)*-1 through -1 {
+      @if type-of(nth($list, abs($i))) == list and $recursive {
+        $result: append($result, reverse(nth($list, abs($i)), $recursive));
+      }
 
-			.#{$column-classname}-s-#{$i}-of-#{$col-am} {
-				width: calc(#{percentage($i/$col-am)} - #{$gutter-width});
-			} // end width
+      @else {
+        $result: append($result, nth($list, abs($i)));
+      }
+   }
 
-			@if ($pushes) {
-				.push-s-#{$i}-of-#{$col-am} {
-					margin-left: calc(#{percentage($i/$col-am)} + #{$gutter-width} / 2);
-				}
-			} // end pushes
-
-			@if ($pulls) {
-				.pull-s-#{$i}-of-#{$col-am} {
-					margin-right: calc(#{percentage($i/$col-am)} + #{$gutter-width} / 2);
-				}
-			} // end pulls
-		} // end for
-	} // end each
+   @return $result;
 }
 
-@media (min-width: $bp-small) {
-	.s-only {display: none;}
-	.s-and-lower {display: none;}
+@each $bp in reverse($breakpoints) {
+	$bp-name: nth($bp, 1);
+	$bp-width: nth(nth($bp, 2), 1);
+
+	@media (min-width: $bp-width) {
+		.#{$bp-name}-only {display: none;}
+		.#{$bp-name}-and-lower {display: none;}
+	}
 }
 
-@media (min-width: $bp-medium) {
-	.m-only {display: none;}
-	.m-and-lower {display: none;}
-}
+
+
+
+
+
+
 
 // under 150 lines !!
