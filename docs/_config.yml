@@ -10,8 +10,8 @@ url:          lucasgruwez.github.io
 baseurl:      /waffle-grid
 
 # Custom variables
-version:  v1.2.2
+version:  v1.3.0
 cdn:      https://unpkg.com/waffle-grid
 repo:     https://github.com/lucasgruwez/waffle-grid
-download: https://github.com/lucasgruwez/waffle-grid/releases/download/v1.2.2/waffle-grid.min.css
+download: https://github.com/lucasgruwez/waffle-grid/releases/download/v1.3.0/waffle-grid.min.css
 docs:     https://github.com/lucasgruwez/waffle-grid/wiki
