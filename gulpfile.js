@@ -37,6 +37,12 @@ gulp.task('css:minify', function() {
     .pipe(gulp.dest('dist'));
 });
 
+gulp.task('watch', function () {
+  gulp.watch('./src/**/*.scss', function () {
+    runSequence('sass:compile', 'css:minify')
+  });
+});
+
 gulp.task('default', function () {
   runSequence('sass:compile', 'css:minify');
 })

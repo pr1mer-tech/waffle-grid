@@ -1,5 +1,5 @@
 /*!
- * waffle-grid - v1.3.0 - (https://lucasgruwez.github.io/waffle-grid)
+ * waffle-grid - v1.3.1 - (https://lucasgruwez.github.io/waffle-grid)
  * Copyright 2017 Lucas Gruwez.
  * Licensed under MIT
  * https://lucasgruwez.github.io/waffle-grid
@@ -60,6 +60,7 @@ $breakpoints: (
 .center {margin-left: auto; margin-right: auto;}
 .left	  {margin-right: auto;}
 .right  {margin-left: auto;}
+.w-auto {flex: 1}
 
 @each $col-am in $grid-columns {
 	@for $i from 1 through $col-am {
@@ -89,6 +90,7 @@ $breakpoints: (
 
 	@media (max-width: $bp-width) {
 		.#{$bp-name}-hide {display: none;}
+		.w-#{$bp-name}-auto {flex: 1}
 
 		@each $col-am in $bp-col-ams {
 			@for $i from 1 through $col-am {
@@ -134,11 +136,9 @@ $breakpoints: (
 	$bp-width: nth(nth($bp, 2), 1);
 
 	@media (min-width: $bp-width) {
-		.#{$bp-name}-only {display: none;}
 		.#{$bp-name}-and-lower {display: none;}
 	}
 }
-
 
 
 

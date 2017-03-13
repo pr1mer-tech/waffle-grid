@@ -1,5 +1,5 @@
 /*!
- * waffle-grid - v1.3.0 - (https://lucasgruwez.github.io/waffle-grid)
+ * waffle-grid - v1.3.1 - (https://lucasgruwez.github.io/waffle-grid)
  * Copyright 2017 Lucas Gruwez.
  * Licensed under MIT
  * https://lucasgruwez.github.io/waffle-grid
@@ -36,6 +36,11 @@
 
 .center,.right {
   margin-left: auto;
+}
+
+.w-auto {
+  -ms-flex: 1;
+      flex: 1;
 }
 
 .col-1-of-4,.col-2-of-8,.col-3-of-12 {
@@ -235,6 +240,11 @@
     display: none;
   }
 
+  .w-m-auto {
+    -ms-flex: 1;
+        flex: 1;
+  }
+
   .col-m-1-of-4,.col-m-2-of-8 {
     width: calc(25% - 20px);
   }
@@ -385,6 +395,11 @@
     display: none;
   }
 
+  .w-s-auto {
+    -ms-flex: 1;
+        flex: 1;
+  }
+
   .col-s-1-of-4 {
     width: calc(25% - 20px);
   }
@@ -483,13 +498,13 @@
 }
 
 @media (min-width:480px) {
-  .s-and-lower,.s-only {
+  .s-and-lower {
     display: none;
   }
 }
 
 @media (min-width:840px) {
-  .m-and-lower,.m-only {
+  .m-and-lower {
     display: none;
   }
 }
