@@ -96,7 +96,7 @@ Please read [CONTRIBUTING.md](./.github/CONTRIBUTING.md) for details on our code
 
 Add the built with waffle-grid badge to your `README.md`
 
-![Built with Waffle Grid](https://rawgit.com/lucasgruwez/waffle-grid/master/docs/img/built-with-waffle.svg)
+[![Built with Waffle Grid](https://lucasgruwez.github.io/waffle-grid/img/built-with-waffle.svg)](https://lucasgruwez.github.io/waffle-grid/img/built-with-waffle.svg)
 
 
 Feel free to send me an email at [gruwez.lucas@gmail.com](mailto:gruwez.lucas@gmail.com), and I might add your site to an examples section I'm currently working on.
