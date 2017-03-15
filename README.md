@@ -92,6 +92,14 @@ The full docs can be found [here](https://github.com/lucasgruwez/waffle-grid/wik
 
 Please read [CONTRIBUTING.md](./.github/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
+###### Made a website using the Waffle grid?
+
+Add the built with waffle-grid badge to your `README.md`
+![Built with Waffle Grid](https://rawgit.com/lucasgruwez/waffle-grid/master/docs/img/built-with-waffle.svg)
+
+
+Feel free to send me an email at [gruwez.lucas@gmail.com](mailto:gruwez.lucas@gmail.com), and I might add your site to an examples section I'm currently working on.
+
 ## Versioning
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/lucasgruwez/waffle-grid/tags).
