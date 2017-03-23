@@ -3,49 +3,98 @@ layout: html
 title: Waffle Grid System
 description: An easy to use flexbox grid system. Made by Lucas Gruwez
 ---
-<!-- Header-->
+
+
+<!-- Header -->
+
 <header>
+
   <div class="header-content">
-    <!-- This div is needed to ensure that the content is centered-->
+
+    <!-- This div is needed to ensure that the content is centered -->
     <img src="{{site.baseurl}}/img/waffle-logo-white.svg" alt="Waffle logo"/>
+
     <h1 class="title">Waffle grid</h1>
+
     <p>An easy to use flexbox grid system.</p>
     <p class="small">Made by <a href="https://github.com/lucasgruwez">@lucasgruwez</a></p>
+
   </div>
+
 </header>
-<!-- Main content-->
+
+<!-- Main content -->
+
 <main>
-  <!-- Grid features-->
+
+  <!-- Grid features -->
+
   <section id="features">
+
     <div class="grid">
       <div class="row">
-        <div class="col col-4-of-12 col-m-4-of-4"><img src="{{site.baseurl}}/img/icon-feather.svg" alt="Feather icon"/>
+        <div class="col col-4-of-12 col-m-4-of-4">
+
+          <img src="{{site.baseurl}}/img/icon-feather.svg" alt="Feather icon"/>
           <h2>Light weight</h2>
           <p>The waffle grid system is super lightweight, weighing in at only 7kb minified using the default settings.</p>
+
         </div>
-        <div class="col col-4-of-12 col-m-4-of-4"><img src="{{site.baseurl}}/img/icon-phone.svg" alt="Phone icon"/>
+        <div class="col col-4-of-12 col-m-4-of-4">
+
+          <img src="{{site.baseurl}}/img/icon-phone.svg" alt="Phone icon"/>
           <h2>Responsive</h2>
           <p>With classes for medium and small devices, the waffle grid can make your layouts fully responsive.</p>
+
         </div>
-        <div class="col col-4-of-12 col-m-4-of-4"><img src="{{site.baseurl}}/img/icon-sliders.svg" alt="Sliders icon"/>
+        <div class="col col-4-of-12 col-m-4-of-4">
+
+          <img src="{{site.baseurl}}/img/icon-sliders.svg" alt="Sliders icon"/>
           <h2>Customisable</h2>
           <p>The waffle grid system was written entirely in <a href="http://sass-lang.com/">sass</a>, so that you can easily change or customize the grid to suit your needs.</p>
+
         </div>
       </div>
     </div>
+
   </section>
-  <!-- Download call to action-->
-  <section id="download-cta"><a href="{{site.download}}" class="btn">Download {{site.version}}</a></section>
-  <!-- Grid example-->
-  <section id="grid-example">{% include example.html %}</section>
-  <!-- Docs preview-->
+
+  <!-- Download call to action -->
+
+  <section id="download-cta">
+
+    <a href="{{site.download}}" class="btn">
+      Download {{site.version}}
+    </a>
+
+  </section>
+
+  <!-- Grid example -->
+
+  <section id="grid-example">
+    {% include example.html %}
+  </section>
+
+  <!-- Docs preview -->
+
   <section id="docs-preview">
-    <div class="wrapper"><script src="https://gist.github.com/lucasgruwez/c3c6ed03fb422fb74e8fec550d7c3978.js")></script></div>
+
+    <div class="wrapper">
+      <script src="https://gist.github.com/lucasgruwez/c3c6ed03fb422fb74e8fec550d7c3978.js")></script>
+    </div>
+
   </section>
-  <!-- Docs call to actio-->
-  <section id="docs-cta"><a href="{{site.docs}}" class="btn">Read the docs</a></section>
+
+  <!-- Docs call to action -->
+
+  <section id="docs-cta">
+    <a href="{{site.docs}}" class="btn">Read the docs</a>
+  </section>
+
 </main>
-<!-- Bottom "All code hosted with ❤ by GitHub section that pops up-->
+
+<!-- Bottom "All code hosted with ❤ by GitHub section that pops up -->
+
 <div class="gist js-activated">
   <div class="gist-meta"><a>All code</a> hosted with ❤ by <a href="https://github.com">GitHub</a></div>
 </div>
