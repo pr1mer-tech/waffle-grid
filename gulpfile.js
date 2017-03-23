@@ -36,12 +36,14 @@ gulp.task('css:minify', function() {
     .pipe(gulp.dest('dist'));
 });
 
-gulp.task('watch', function () {
+gulp.task('watch', ['build'], function () {
   gulp.watch('./src/**/*.scss', function () {
-    runSequence('sass:compile', 'css:minify')
+    runSequence('sass:compile', 'css:minify');
   });
 });
 
-gulp.task('default', function () {
+gulp.task('build', function () {
   runSequence('sass:compile', 'css:minify');
-})
+});
+
+gulp.task('default', ['watch']);
