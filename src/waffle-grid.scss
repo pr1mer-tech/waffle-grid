@@ -1,5 +1,5 @@
 /*!
- * waffle-grid - v1.3.1 - (https://lucasgruwez.github.io/waffle-grid)
+ * waffle-grid - v1.3.2 - (https://lucasgruwez.github.io/waffle-grid)
  * Copyright 2017 Lucas Gruwez.
  * Licensed under MIT
  * https://lucasgruwez.github.io/waffle-grid
@@ -10,6 +10,7 @@
 $grid-classname: "grid" !default;
 $row-classname: "row" !default;
 $column-classname: "col" !default;
+$container-classname: "container" !default;
 
 // Column amounts, results in:
 // .col-n-of-4, or .col-n-of-8
@@ -34,7 +35,13 @@ $breakpoints: (
 	s: (480px, (4, 6)),
 );
 
-// Actual css, change at your own risk
+// Actual css, change this at your own risk
+
+.#{$container-classname} {
+	width: $grid-width;
+	max-width: $grid-max-width;
+	margin: 0 auto;
+}
 
 .#{$grid-classname} {
 	display: flex;
@@ -42,6 +49,10 @@ $breakpoints: (
 	width: $grid-width;
 	max-width: $grid-max-width;
 	margin: 0 auto;
+	&.full-width {
+		width: 100%;
+		max-width: 100%;
+	}
 }
 
 .#{$row-classname} {
@@ -117,17 +128,14 @@ $breakpoints: (
 
 @function reverse($list, $recursive: false) {
    $result: ();
-
    @for $i from length($list)*-1 through -1 {
       @if type-of(nth($list, abs($i))) == list and $recursive {
         $result: append($result, reverse(nth($list, abs($i)), $recursive));
       }
-
       @else {
         $result: append($result, nth($list, abs($i)));
       }
    }
-
    @return $result;
 }
 
@@ -139,11 +147,4 @@ $breakpoints: (
 		.#{$bp-name}-and-lower {display: none;}
 	}
 }
-
-
-
-
-
-
-
 // under 150 lines !!

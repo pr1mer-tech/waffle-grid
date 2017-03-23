@@ -1,9 +1,15 @@
 /*!
- * waffle-grid - v1.3.1 - (https://lucasgruwez.github.io/waffle-grid)
+ * waffle-grid - v1.3.2 - (https://lucasgruwez.github.io/waffle-grid)
  * Copyright 2017 Lucas Gruwez.
  * Licensed under MIT
  * https://lucasgruwez.github.io/waffle-grid
- */.grid,.row {
+ */.container,.grid {
+  width: 960px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.grid,.row {
   display: -ms-flexbox;
   display: flex;
 }
@@ -11,9 +17,11 @@
 .grid {
   -ms-flex-direction: column;
       flex-direction: column;
-  width: 960px;
-  max-width: 80%;
-  margin: 0 auto;
+}
+
+.grid.full-width {
+  width: 100%;
+  max-width: 100%;
 }
 
 .row {
