@@ -33,7 +33,7 @@ $pulls: true !default;
 $breakpoints: (
 	m: (840px, (4, 6, 8)),
 	s: (480px, (4, 6)),
-);
+) !default;
 
 // Actual css, change this at your own risk
 
