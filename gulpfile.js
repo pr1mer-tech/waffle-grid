@@ -1,6 +1,5 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
-const gutil = require('gulp-util');
 const rename = require('gulp-rename');
 const cleanCSS = require('gulp-clean-css');
 const runSequence = require('run-sequence');
@@ -37,12 +36,14 @@ gulp.task('css:minify', function() {
     .pipe(gulp.dest('dist'));
 });
 
-gulp.task('watch', function () {
+gulp.task('watch', ['build'], function () {
   gulp.watch('./src/**/*.scss', function () {
-    runSequence('sass:compile', 'css:minify')
+    runSequence('sass:compile', 'css:minify');
   });
 });
 
-gulp.task('default', function () {
+gulp.task('build', function () {
   runSequence('sass:compile', 'css:minify');
-})
+});
+
+gulp.task('default', ['watch']);

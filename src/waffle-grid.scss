@@ -33,22 +33,44 @@ $pulls: true !default;
 $breakpoints: (
 	m: (840px, (4, 6, 8)),
 	s: (480px, (4, 6)),
-);
+) !default;
+
+// Actual css, change this at your own risk
+
+
+@mixin build-container {
+  width: $grid-width;
+	max-width: $grid-max-width;
+	margin: 0 auto;
+};
+
+@mixin build-grid {
+  display: flex;
+	flex-direction: column;
+}
+
+@mixin build-row {
+  display: flex;
+	flex-direction: row;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+@mixin build-column {
+  box-sizing: border-box;
+  margin: $gutter-width / 2;
+  vertical-align: top;
+}
 
 // Actual css, change this at your own risk
 
 .#{$container-classname} {
-	width: $grid-width;
-	max-width: $grid-max-width;
-	margin: 0 auto;
+	@include build-container;
 }
 
 .#{$grid-classname} {
-	display: flex;
-	flex-direction: column;
-	width: $grid-width;
-	max-width: $grid-max-width;
-	margin: 0 auto;
+  @include build-grid;
+	@include build-container;
 	&.full-width {
 		width: 100%;
 		max-width: 100%;
@@ -56,17 +78,13 @@ $breakpoints: (
 }
 
 .#{$row-classname} {
-	display: flex;
-	flex-direction: row;
-	width: 100%;
-	flex-wrap: wrap;
+	@include build-row;
 }
 
 .#{$column-classname} {
-  box-sizing: border-box;
-  margin: $gutter-width / 2;
-  vertical-align: top;
+  @include build-column;
 }
+
 
 .center {margin-left: auto; margin-right: auto;}
 .left	  {margin-right: auto;}
@@ -147,4 +165,4 @@ $breakpoints: (
 		.#{$bp-name}-and-lower {display: none;}
 	}
 }
-// under 150 lines !!
+// under 170 lines !!
