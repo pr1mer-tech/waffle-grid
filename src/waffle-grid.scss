@@ -1,5 +1,5 @@
 /*!
- * waffle-grid - v1.3.2 - (https://lucasgruwez.github.io/waffle-grid)
+ * waffle-grid - v1.3.3 - (https://lucasgruwez.github.io/waffle-grid)
  * Copyright 2017 Lucas Gruwez.
  * Licensed under MIT
  * https://lucasgruwez.github.io/waffle-grid
@@ -37,40 +37,18 @@ $breakpoints: (
 
 // Actual css, change this at your own risk
 
-
-@mixin build-container {
-  width: $grid-width;
+.#{$container-classname} {
+	width: $grid-width;
 	max-width: $grid-max-width;
 	margin: 0 auto;
-};
-
-@mixin build-grid {
-  display: flex;
-	flex-direction: column;
-}
-
-@mixin build-row {
-  display: flex;
-	flex-direction: row;
-	width: 100%;
-	flex-wrap: wrap;
-}
-
-@mixin build-column {
-  box-sizing: border-box;
-  margin: $gutter-width / 2;
-  vertical-align: top;
-}
-
-// Actual css, change this at your own risk
-
-.#{$container-classname} {
-	@include build-container;
 }
 
 .#{$grid-classname} {
-  @include build-grid;
-	@include build-container;
+	display: flex;
+	flex-direction: column;
+	width: $grid-width;
+	max-width: $grid-max-width;
+	margin: 0 auto;
 	&.full-width {
 		width: 100%;
 		max-width: 100%;
@@ -78,13 +56,17 @@ $breakpoints: (
 }
 
 .#{$row-classname} {
-	@include build-row;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	flex-wrap: wrap;
 }
 
 .#{$column-classname} {
-  @include build-column;
+  box-sizing: border-box;
+  margin: $gutter-width / 2;
+  vertical-align: top;
 }
-
 
 .center {margin-left: auto; margin-right: auto;}
 .left	  {margin-right: auto;}
@@ -165,4 +147,4 @@ $breakpoints: (
 		.#{$bp-name}-and-lower {display: none;}
 	}
 }
-// under 170 lines !!
+// under 150 lines !!
