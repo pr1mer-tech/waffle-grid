@@ -1,23 +1,23 @@
 # markdown adn highlighter
-markdown: kramdown
+markdown:    kramdown
 highlighter: rouge
 
 # permalinks
-permalink: pretty
+permalink:  pretty
 
 # Server
-url:          lucasgruwez.github.io
-baseurl:      /waffle-grid
+url:        lucasgruwez.github.io
+baseurl:    /waffle-grid
 
 # Custom variables
-version:    v1.3.2
+version:    v1.3.3
 cdn:        https://unpkg.com/waffle-grid
 repo:       https://github.com/lucasgruwez/waffle-grid
-download:   https://github.com/lucasgruwez/waffle-grid/releases/download/v1.3.2/waffle-grid.min.css
+download:   https://github.com/lucasgruwez/waffle-grid/releases/download/v1.3.3/waffle-grid.min.css
 docs:       https://github.com/lucasgruwez/waffle-grid/wiki
 stargazers: https://github.com/lucasgruwez/waffle-grid/stargazers
 
-npm:      https://npmjs.com/package/waffle-grid
+npm:        https://npmjs.com/package/waffle-grid
 author:
-  github: https://github.com/lucasgruwez
-  twitter: https://twitter.com/lucasgruwez
+  github:   https://github.com/lucasgruwez
+  twitter:  https://twitter.com/lucasgruwez
