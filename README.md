@@ -109,6 +109,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 - **Lucas Gruwez** - *Initial work* - [@lucasgruwez](https://github.com/lucasgruwez)
 - **Jack McNicol** - *Helped out a lot* - [@jackmcpickle](https://github.com/jackmcpickle)
+- **Arthur Guiot** - *Added js function* - [@arguiot](https://gothub.com/arguiot)
 
 See also the list of [contributors](https://github.com/lucasgruwez/waffle-grid/contributors) who participated in this project.
 
