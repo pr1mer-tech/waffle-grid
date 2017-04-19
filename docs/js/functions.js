@@ -15,7 +15,7 @@ $('nav .hamburger').click(function () {
 
 $(document).ready(function () {
   $.getJSON("https://unpkg.com/waffle-grid?json", function (data) {
-    var size = data.size / 1000;
-    $(".kb").text(Math.round(size));
+    var size = Math.round(data.size / 1000);
+    $(".kb").text(size);
   });
 });
