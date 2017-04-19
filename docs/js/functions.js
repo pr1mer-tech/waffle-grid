@@ -12,9 +12,10 @@ $(window).scroll(function() {
 $('nav .hamburger').click(function () {
   $('.js-toggled').toggleClass('visible')
 })
+
 $(document).ready(function () {
-	$.getJSON("https://unpkg.com/waffle-grid?json", function (data) {
-		var size = data.size / 1000;
-		$(".kb").text(size);
-	});
+  $.getJSON("https://unpkg.com/waffle-grid?json", function (data) {
+    var size = data.size / 1000;
+    $(".kb").text(Math.round(size));
+  });
 });
