@@ -32,7 +32,7 @@ An easy to use flexbox grid system.
 
 To get the waffle grid system in your web page, simply paste this code into the `head` of your document,
 ```html
-<link rel="stylesheet" href="https://unpkg.com/waffle-grid/dist/waffle-grid.min.css">
+<link rel="stylesheet" href="https://unpkg.com/waffle-grid">
 <!-- or -->
 <link rel="stylesheet" href="https://unpkg.com/waffle-grid/dist/waffle-grid.css">
 ```
