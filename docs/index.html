@@ -62,10 +62,25 @@ description: An easy to use flexbox grid system. Made by Lucas Gruwez
   <!-- Download call to action -->
 
   <section id="download-cta">
+    <div class="grid">
+      <div class="row">
+        <div class="col w-auto"></div>
+        <div class="col col-5-of-12 col-m-4-of-4">
+          <a href="{{site.download}}" class="btn">
+            Download {{site.version}}
+          </a>
+        </div>
 
-    <a href="{{site.download}}" class="btn">
-      Download {{site.version}}
-    </a>
+        <div class="col w-auto"></div>
+
+        <div class="col col-5-of-12 col-m-4-of-4">
+          <a href="{{site.stargazers}}" class="btn inverted">
+            Star on GitHub
+          </a>
+        </div>
+        <div class="col w-auto"></div>
+      </div>
+    </div>
 
   </section>
 
