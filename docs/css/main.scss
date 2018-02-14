@@ -28,9 +28,9 @@ a {
 }
 
 nav {
-  height: 75px;
+  height: 100px;
   background-color: #ffffff;
-  padding: 17.5px 25px;
+  padding: 30px 24px;
   color: $brand-color;
   position: fixed;
   top: 0;
@@ -171,7 +171,6 @@ section {
     a.btn {
       background-color: #ffffff;
       color: $brand-color;
-      border-radius: 2pt;
       font-size: 24px;
       padding: 15px 35px;
       text-decoration: none;
@@ -189,7 +188,6 @@ section {
     a.btn {
       background-color: $brand-color;
       color: #ffffff;
-      border-radius: 2pt;
       font-size: 24px;
       padding: 15px 35px;
       text-decoration: none;
