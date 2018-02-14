@@ -69,7 +69,7 @@ $breakpoints: (
 }
 
 .center {margin-left: auto; margin-right: auto;}
-.left	  {margin-right: auto;}
+.left   {margin-right: auto;}
 .right  {margin-left: auto;}
 .w-auto {flex: 1}
 
@@ -149,4 +149,5 @@ $breakpoints: (
 		.#{$bp-name}-and-lower {display: none;}
 	}
 }
-// under 150 lines !!
+
+// under 160 lines !!
