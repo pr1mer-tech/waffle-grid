@@ -82,6 +82,10 @@ If you want you can still download the waffle grid [here](https://github.com/luc
 
 The full docs can be found [here](https://github.com/lucasgruwez/waffle-grid/wiki)
 
+## Like this project?
+
+Please feel free to give the waffle-grid repo a star, and if you want to help support my work, please consider [donating](https://paypal.me/lucasgruwez).
+
 ## Built With
 
 * [Gulp](http://gulpjs.com/) - Build system
