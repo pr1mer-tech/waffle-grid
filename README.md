@@ -42,7 +42,7 @@ $ npm install waffle-grid
 # or
 $ bower install waffle-grid
 ```
-If you want you can still download the waffle grid [here](https://github.com/lucasgruwez/waffle-grid/releases/download/v1.3.1/waffle-grid.min.css).
+If you want you can still download the waffle grid [here](https://github.com/lucasgruwez/waffle-grid/releases).
 
 ## Docs
 

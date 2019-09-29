@@ -1,5 +1,5 @@
 /*!
- * waffle-grid - v1.3.5 - (https://lucasgruwez.github.io/waffle-grid)
+ * waffle-grid - v1.3.6 - (https://lucasgruwez.github.io/waffle-grid)
  * Copyright 2017 Lucas Gruwez.
  * Licensed under MIT
  * https://lucasgruwez.github.io/waffle-grid
@@ -11,6 +11,7 @@ $grid-classname: "grid" !default;
 $row-classname: "row" !default;
 $column-classname: "col" !default;
 $container-classname: "container" !default;
+$helper-prefix: "" !default;
 
 // Column amounts, results in:
 // .col-n-of-4, or .col-n-of-8
@@ -68,10 +69,10 @@ $breakpoints: (
   vertical-align: top;
 }
 
-.center {margin-left: auto; margin-right: auto;}
-.left   {margin-right: auto;}
-.right  {margin-left: auto;}
-.w-auto {flex: 1}
+.#{$helper-prefix}center {margin-left: auto; margin-right: auto;}
+.#{$helper-prefix}left   {margin-right: auto;}
+.#{$helper-prefix}right  {margin-left: auto;}
+.#{$helper-prefix}w-auto {flex: 1}
 
 @each $col-am in $grid-columns {
 	@for $i from 1 through $col-am {

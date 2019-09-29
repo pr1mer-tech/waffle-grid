@@ -71,4 +71,4 @@ typings/
 
 # custom gitignored folders
 
-docs/_jade
+package-lock.json
