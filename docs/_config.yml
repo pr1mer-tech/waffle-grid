@@ -6,20 +6,20 @@ highlighter: rouge
 permalink:  pretty
 
 # Server
-url:        lucasgruwez.github.io
-baseurl:    /waffle-grid
+url:        waffle.pr1mer.tech
+baseurl:    /
 
 # Custom variables
 version:    v1.3.6
 cdn:        https://unpkg.com/waffle-grid
-repo:       https://github.com/lucasgruwez/waffle-grid
-download:   https://github.com/lucasgruwez/waffle-grid/releases/download/v1.3.6/waffle-grid.min.css
-docs:       https://github.com/lucasgruwez/waffle-grid/wiki
-stargazers: https://github.com/lucasgruwez/waffle-grid/stargazers
+repo:       https://github.com/pr1mer-tech/waffle-grid
+download:   https://github.com/pr1mer-tech/waffle-grid/releases/download/v1.3.6/waffle-grid.min.css
+docs:       https://github.com/pr1mer-tech/waffle-grid/wiki
+stargazers: https://github.com/pr1mer-tech/waffle-grid/stargazers
 
 npm:        https://npmjs.com/package/waffle-grid
 author:
-  github:   https://github.com/lucasgruwez
+  github:   https://github.com/pr1mer-tech
   twitter:  https://twitter.com/lucasgruwez
 
 donate:     https://paypal.me/lucasgruwez
